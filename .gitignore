@@ -1,6 +1,9 @@
 #bnp training data
 data/
 
+#python build folder
+build/
+
 # Compiled python modules.
 *.pyc
 
