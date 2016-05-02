@@ -1,14 +1,15 @@
 from setuptools import setup
 
-setup(name='kaggle_bnp',
+setup(name='kaggle_santander',
       version='0.1',
-      description='kaggle submission for [BNP Paribas Cardif Claims Management](https://www.kaggle.com/c/bnp-paribas-cardif-claims-management)',
-      url='https://github.com/dclaze/kaggle-bnp',
+      description='kaggle submission for santander',
+      url='https://github.com/dclaze/kaggle-santander',
       author='Doug Colaizzo',
       author_email='dcolaizzo@gmail.com',
       license='MIT',
-      packages=['kaggle_bnp'],
+      packages=['kaggle_santander'],
       entry_points = {
-            'console_scripts': ['kaggle-bnp=kaggle_bnp.command_line:main'],
+            'console_scripts': ['kaggle-santander=kaggle_santander.command_line:main'],
       },
+      install_requires = ['scikit-learn', 'xgboost', 'numpy'],
       zip_safe=False)
